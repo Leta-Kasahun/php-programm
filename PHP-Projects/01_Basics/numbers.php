@@ -26,4 +26,6 @@ echo (max([22,3,56,8,90]));
 $randumnumber=mt_rand(10,50);
 echo "<br/>";
 echo $randumnumber;
+echo "<br/>";
+echo pow(10,3);
 ?>
