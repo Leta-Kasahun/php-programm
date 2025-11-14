@@ -33,4 +33,16 @@ $num=10;
 
     }
   while($num>=1);
+
+
+  $num1=10;
+  for ($i=0;$i<=$num1;$i++){
+    if($i%2==0)echo "Even: <br/>";
+    else echo "Odd: <br/>";
+  }
+
+
+  $colors=["red","blue","green","yellow"];
+  foreach($colors as $color)echo "$color <br/>";
+
 ?>
