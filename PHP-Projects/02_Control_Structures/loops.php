@@ -21,7 +21,9 @@ while($t>=1){
     echo "<br/>";
 
     //do while
-    $num=10;
+    
+}
+$num=10;
     $sum=0;
     do{
         echo $sum;
@@ -31,5 +33,4 @@ while($t>=1){
 
     }
   while($num>=1);
-}
 ?>
