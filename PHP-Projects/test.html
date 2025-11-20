@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendent compinator */
+        /* div p{
+            background: steelblue;
+            color: white;
+            text-align: justify;
+            padding: 10;
+        } */
+         /* child copinator */
+          /* div>p{
+            background: steelblue;
+            color: white;
+            text-align: justify;
+            padding: 10;
+        } */
+
+        /* next sibiling compinator */
+         div+ p{
+            background: steelblue;
+            color: white;
+            text-align: justify;
+            padding: 10;
+        }
+        /* next sibiling compinator */
+         div~ p{
+            background: steelblue;
+            color: white;
+            text-align: justify;
+            padding: 10;
+        }
+
+        /* psudo class selector */
+        input:focus{
+            border:blue;
+        }
+        a:link{
+            background: green;
+        }
+        a:visited{
+            background: blue;
+        }
+    a:hover{
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <table border="2" style="border-collapse: collapse;"cellspacing="20">
+        <caption>table caption</caption>
+        <tr>
+            <th colspan="2">head1</th>
+            <th>head2</th>
+           
+        </tr>
+        <tr>
+            <td  >data 4</td>
+            <td>data 2</td>
+            <td rowspan="3">data 3</td>
+            
+        </tr>
+        <tr>
+       
+    
+     <td>data a</td>
+     <td>data 6</td>
+       
+    
+           </tr>
+      <tr >
+         
+         <td>data 5</td>
+          <td >data 6</td>
+      </tr>
+    </table>
+
+    <form action="action_page.php">
+       <fieldset>
+        <legend>Exam Preparation Form Input</legend>
+         <label for="name">Name</label>
+        <input type="text"><br>
+        <label for="lname">Lname</label>
+        <input type="text"><br>
+        <label for="em">email</label><input type="email"><br>
+        <label for="pas">password</label><input type="password"><br><br>
+        <input type="radio"name="gd"value="f"><label for="gd">Female</label><br>
+        <input type="radio"name="gd"value="m"><label for="gd">Male</label><br>
+        <input type="checkbox"name="gd"value="f"><label for="gd">python</label><br>
+        <input type="checkbox"name="gd"value="m"><label for="gd">html</label><br>
+        <input type="checkbox"name="gd"value="f"><label for="gd">java</label><br>
+        <input type="checkbox"name="gd"value="m"><label for="gd">javascript</label><br>
+        <label for="">choise department</label>
+        <select name="depart" id="">
+            <optgroup label="Tech">
+                <option value="soft">soft</option>
+                <option value="data">datasince</option>
+                <option value="coputor">computor since</option>
+
+            </optgroup>
+            <optgroup label="health">
+                <option value="medicine">medicine</option>
+                <option value="pharmacy">pharmacy</option>
+                <option value="nursing">nursing</option>
+
+            </optgroup>
+        </select><br>
+        <label for="browser">choise browser</label><br>
+        <input list="browsers"name="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="chrome"></option>
+            <option value="Opera"></option>
+
+        </datalist><br>
+        <fieldset>
+            <legend>Person</legend>
+            <label for="fname">Name</label>
+            <input type="text"name="fname"value="Leta"><br>
+        </fieldset>
+   
+<br>
+<label for="msg">message</label><textarea name="comment" id=""cols="19"rows="4"></textarea><br>
+        <input type="submit"value="submit"onclick="alert('Data is submited')">
+        <input type="reset" name="" value="reset"onClick="alert('Data is reseted')">
+     
+       </fieldset>
+    </form>
+  
+    <details>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sunt expedita cupiditate fuga cum sint. Quas odio aut consequatur pariatur. Voluptates dicta dolor atque facere optio, possimus repudiandae eveniet vel?
+        <summary>more</summary>
+          <figure>
+        <img src="./image.png" alt="ai">
+        <figcaption>AI figure</figcaption>
+    </figure>
+    </details>
+    <canvas id="canv"width="200"height="200"style="border:2px solid red;">
+        
+    </canvas>
+    <svg width="100"height="100">
+        <circle cx="50"cy="50"r="40"stroke="green"stroke-width="2"fill="steelblue"/>
+    </svg>
+    <a href="https://google.com">go to</a>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, minus molestias sequi nesciunt commodi et esse debitis consequuntur sint voluptatibus nostrum possimus quisquam recusandae velit eaque neque officiis est? Quisquam.</p><br>
+        <section><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit neque ullam, dolorem animi numquam aperiam facilis. Consequuntur in necessitatibus, praesentium rem consequatur perferendis mollitia impedit rerum, harum cupiditate sequi? Eos.</p></section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum, commodi dicta excepturi impedit necessitatibus, molestiae culpa possimus omnis minus beatae facilis sint, iusto neque cupiditate repellendus. Expedita, in quae.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum, maxime, omnis quae officia quidem, harum aliquam repellat mollitia quaerat nihil ratione dolore amet debitis perferendis obcaecati nulla animi adipisci.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt, nemo dolore voluptate doloribus nam perferendis a, quisquam reprehenderit laboriosam voluptatem inventore sequi recusandae ducimus molestias? Delectus quos suscipit beatae.</p>
+    <script>
+        let c=document.getElementById("canv");
+         let ctx=c.getContext("2d");
+        ctx.fillStyle="blue";
+        ctx.fillRect(0,0,c.width,c.height);
+    </script>
+
+</body>
+</html>    
