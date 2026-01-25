@@ -39,3 +39,13 @@ Operators help perform calculations, comparisons, and decision-making in program
 Variable scope defines where a variable can be accessed within a program.
 PHP has three main scopes: local (inside functions), global (outside functions), and static (retains value between function calls).
 Understanding scope helps manage variable accessibility and lifetime.
+
+🔹 Truthy and Falsy Values
+
+In PHP, values are automatically evaluated as true or false when used in conditions such as if statements and loops.
+Truthy values behave like true, while falsy values behave like false.
+
+Falsy values in PHP include: false, 0, 0.0, "0", an empty string "", NULL, and an empty array [].
+All other values are considered truthy, including non-zero numbers, non-empty strings, non-empty arrays, and objects.
+
+Understanding truthy and falsy values is important for writing correct conditional logic and avoiding unexpected behavior, especially when handling user input, validation, and database results in frameworks like Laravel.
