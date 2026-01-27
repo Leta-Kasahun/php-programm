@@ -33,11 +33,14 @@ if(!$areU)echo "\nThis is not U";
 else echo "\nWelcome this is U";
 
 //ternery oprators
-$status="anonymous";
+$status="";
 echo "<br/>";
 echo $status=(empty($user))?"anonymous":"Logged In";
 echo "<br/>";
-$user="Leta Kasahun";
-echo $status=(empty($user))?"anonymous":"Logged In";
-
+$user="leta Kasahun";
+echo $status=(empty($user))?"Login":$user;
+//increament and ecreament
+$a=56;
+echo "<br/>";
+echo ++$a."<br>";
 ?>
