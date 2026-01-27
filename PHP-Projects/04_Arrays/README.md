@@ -35,32 +35,24 @@ $stock = [
     ["Saab", 5, 2]
 ];
 
-🔹 Array Functions
-
-PHP provides many built-in functions to manage arrays.
-They simplify sorting, searching, adding, removing, and transforming data.
-
-Common examples:
-
-count() → returns number of items
-
-array_push() → adds an element
-
-array_pop() → removes last element
-
-array_merge() → joins arrays
-
-sort() → sorts indexed arrays
-
-asort() → sorts associative arrays by value
-
-ksort() → sorts associative arrays by key
-
-in_array() → checks if value exists
-
-array_keys() → returns all keys
-
-array_values() → returns all values
+🔹 Essential Array Functions
+Function	Purpose	Example
+count()	Number of items	count($names)
+array_push()	Add element to end	array_push($names, "Sara")
+array_pop()	Remove last element	$last = array_pop($names)
+array_unshift()	Add element to start	array_unshift($names,"Lina")
+array_shift()	Remove first element	$first = array_shift($names)
+array_merge()	Combine arrays	$all = array_merge($arr1,$arr2)
+sort() / rsort()	Sort indexed arrays	sort($numbers)
+asort() / arsort()	Sort assoc by value	asort($student)
+ksort() / krsort()	Sort assoc by key	ksort($student)
+in_array()	Check value exists	in_array("Leta",$names)
+array_keys()	Get all keys	array_keys($student)
+array_values()	Get all values	array_values($student)
+array_search()	Find key by value	array_search("Sara",$names)
+array_filter()	Filter values	$even = array_filter($numbers, fn($n)=>$n%2==0)
+array_map()	Transform values	$squared = array_map(fn($n)=>$n*$n,$numbers)
+array_reduce()	Aggregate values	$sum = array_reduce($numbers, fn($carry,$n)=>$carry+$n,0)
 
 🔹 Why Arrays Matter?
 
