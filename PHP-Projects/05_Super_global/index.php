@@ -16,8 +16,9 @@
 </html>
 
 <?php
-$un=$_POST["username"];
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{$un=$_POST["username"];
 $p=$_POST["password"];
-if(!$un||!$p)echo "all Fields are required";
-else echo "username $un and $p is login";
+if(empty($un)||empty($p))echo "all Fields are required";
+else echo "username $un and $p is login";}
 ?>
