@@ -1,0 +1,13 @@
+{
+    "name": "mycompany/php-programm",
+    "description": "my php composer projecte demo",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mycompany\\PhpProgramm\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
